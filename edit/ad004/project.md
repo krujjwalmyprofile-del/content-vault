@@ -53,3 +53,44 @@
 - **Unclear word:** Whisper heard "build a **video** that generates results" twice, so the captions show it as heard. If she meant "table" or "workflow", the caption needs a fix.
 - **Problem tags:** "UNUSED", "WHICH ONES?", "HOW TO USE?" and "NOT BUILT" paraphrase her lines.
 - **Fixed-state tags:** "IN USE", "RIGHT STACK", "USED WELL" and "BUILT" mirror those problems. Only "right tech stack" is said word for word.
+
+---
+# Version 2 (`final-ad004-v2.mp4`): no split screen, tight cut and floating 3D elements
+**Output:** 1080×1920, 30 fps, 35.6 s. The master is at -14.0 LUFS integrated with a -0.9 dBFS true peak.
+
+## Cut
+- 15 segments taken from the audio (`segments.json`): 45.4 s cut down to 35.6 s.
+- Segment edges were checked against the waveform, and they all fall in silence.
+- The pauses between phrases are tightened.
+- The filler "I mean I can understand" is removed.
+- Each cut alternates the punch-in level (×1.00 / ×1.10 / ×1.12 and so on), with a 4-frame push and blur on the cut itself.
+
+## Look
+- **Presenter:** full frame, matted, on the stone backdrop. The backdrop has parallax and bokeh, and goes out of focus on "you need a mentor".
+- **3D elements, two depth layers:**
+  - back cards sit behind her, so her hair overlaps them
+  - front cards sit in the lower third
+  - they enter with perspective, float on idle, follow the camera punch-ins, and fly out with blur
+  - each card gets a glass shine as it enters
+- **Beats:**
+  1. Video thumbnails orbit her and get checked off; then a "Results: Still flat." card.
+  2. Floating avatar heads (generic, not real people) for "every lead gen agency owner", with a quote card.
+  3. Clay table card, then floating integration chips marked "?" and a "WHICH FEATURES?" pill; "UNUSED" stamps onto the table.
+  4. Credits card and a "HOW TO USE?" pill; a broken pipeline card.
+  5. Big "YOU NEED A MENTOR" headline above her head, with the backdrop out of focus, plus a mentor card.
+  6. "THE COHORT" pill; four workflow step cards fan in; integration chips fly in and snap into "Integrations"; checks land on each word of "each and every step".
+  7. "Sandbox GTM · Apply now" card with a travelling edge light; avatar heads return.
+- **Finishing:**
+  - muted light leaks on beats
+  - edge lens and RGB split on 3 key transitions
+  - captions in a charcoal pill, with the clay accent on highlighted words
+  - vignette and film grain
+
+## Audio
+- Her voice comes from the same 15 cuts, with 12 ms crossfades.
+- New synthesised bed (92 BPM), ducked under her voice.
+- SFX:
+  - whooshes on beats and cuts
+  - soft ticks on card entrances and checks
+  - a sub swell under the mentor line
+  - a riser into the CTA
