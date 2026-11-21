@@ -49,10 +49,27 @@ Fixes the recogniser needed: "gtme" → GTME, "text tank" → tech stack, "sandb
 - SFX, also synthesised: impacts on the flashes, whooshes on window entrances, clicks on panel items. They sit about 12–15 dB under voice peaks.
 - Master: two-pass loudnorm, -13.7 LUFS integrated, true peak -1.0 dBFS.
 
+## Version 2: 44.7 s premium cut (`final-44s-premium.mp4`)
+- **Cut:** the silent 4.0 s reaction intro is removed, so the video opens on her first word. That gives 1,342 frames, 44.73 s. All graphics, captions and sound stay synced: the code keeps source timestamps and applies `OFF = 4.0`.
+- **Hook:** the headline reveals within the first frames while she says "I have priced my GTME cohort". There is a punch-in on "fractional price".
+- **Finishing passes added (After Effects-style):**
+  - per-character kinetic headlines: glyphs rise out of a mask and go from blur to sharp
+  - a gold shine sweep across accent words
+  - viewfinder brackets that close in on "BUT WHY?" and "APPLY RIGHT NOW"
+  - letter-tracking drift and a yellow rule drawing in on the end card
+  - edge-only lens distortion plus RGB split on the four section transitions, from a displacement map that is neutral over the face
+  - warm light leaks on section changes, with the white flashes softened to suit them
+  - film grain (8-frame cycle), a soft vignette, and a light contrast and saturation grade
+  - glass shine sweeps on panel cards and demo scenes
+  - a rotating gold edge light on the demo window
+  - word-by-word rise animation in the captions
+- **Audio:** music and SFX are re-synthesised for the new timeline. There is now a riser into "Apply" and swooshes ahead of the light leaks. The master is at -14.0 LUFS integrated with a -1.0 dBFS true peak.
+- **Source:** `remotion-44s/` and `synth-44s.py`.
+
 ## Open items / to verify
 - **Brand spelling:** check "Sandbox GTME" (heard as "sandbox gtme") and "GTME".
 - **Offer details:** everything on screen comes from the narration (50+ hours, 40+ playbooks, 2 live sessions a week). Confirm before publishing.
-- **Silent opening:** the first 4 s have no speech and are covered by the hook headline. A tighter cut (~44.7 s) could drop that silence if retention matters more than keeping the full timeline.
+- **Silent opening:** resolved in v2. The 44.7 s cut drops it, and v1 (`final.mp4`, 48.6 s) keeps it.
 - **Bottom-UI overlap:** the demo window sits partly inside the bottom ~420 px that platform UI can cover. The close framing leaves no other place for it below the face.
 
 ## Rebuild
